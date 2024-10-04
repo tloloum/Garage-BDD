@@ -1,0 +1,339 @@
+/* --------------PAGE HOME------------------ */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.barre ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: fixed;
+  background-color: #333;
+  width: 100%;
+}
+
+.barre li {
+  display: inline-block;
+}
+
+.barre li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.barre li a:hover:not(.active) {
+  background-color: #04aa6d;
+}
+
+.courant {
+  background-color: #04aa6d;
+}
+
+.barre {
+  min-height: 47px;
+  border: solid;
+}
+
+/* --------------PAGE INDEX------------------ */
+
+.page-index {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-index h1 {
+  color: #04aa6d;
+  margin-bottom: 20px;
+}
+
+.page-index form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+}
+
+.page-index form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.page-index form input,
+.page-index form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.page-index form input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-index form input[type="submit"]:hover {
+  background-color: #037d56;
+}
+
+/* --------------PAGE CLIENTS------------------ */
+
+.menu {
+  width: 200px;
+  overflow: auto;
+  border: 1px solid #ccc;
+  max-height: 300px;
+}
+
+.menu-item {
+  padding: 8px;
+  cursor: pointer;
+  margin: 2px;
+  color: white;
+  border: none;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.menu-item:hover {
+  background-color: #04aa6d;
+}
+
+.page {
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resultats {
+  width: 60%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.resultats h2 {
+  color: #04aa6d;
+}
+
+.client-info {
+  padding: 10px;
+}
+
+.client-info p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.client-info strong {
+  font-weight: bold;
+}
+
+.recherche {
+  width: 18%;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.recherche h1 {
+  color: #04aa6d;
+}
+
+.recherche .menu-item {
+  background-color: #04aa6d;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.recherche .menu-item:hover {
+  background-color: #0e8d58;
+}
+
+/* --------------PAGE CONSULTATIONS------------------ */
+
+.page-consult {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 5px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.vehicule,
+.interventions {
+  flex: 1;
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.vehicule h2,
+.interventions h2 {
+  margin-bottom: 20px;
+}
+
+.recherche-consult {
+  margin-bottom: 20px;
+}
+
+.recherche-consult .menu {
+  width: auto;
+  overflow: auto;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex; /* Pour aligner les boutons d'année côte à côte */
+}
+
+.menu-item {
+  padding: 8px 12px;
+  cursor: pointer;
+  margin: 5px;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #04aa6d;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.resultats_consult {
+  margin: 10px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.resultats_consult ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.resultats_consult ul li {
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.resultats_consult ul li:last-child {
+  border-bottom: none;
+}
+
+.recherche-consult form,
+.interventions form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recherche-consult input[type="date"],
+.interventions input[type="date"] {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-consult {
+  padding: 5px 10px;
+  background-color: #04aa6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-consult:hover {
+  background-color: #028a5e;
+}
+
+/* --------------PAGE STATISTIQUES------------------ */
+
+.page-stat {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.page-stat h2 {
+  color: #04aa6d;
+  margin-bottom: 20px;
+}
+
+.page-stat .statistiques {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.page-stat .statistiques ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.page-stat .statistiques ul li {
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.page-stat .statistiques ul li:last-child {
+  border-bottom: none;
+}
+
+.page-stat .statistiques input[type="date"] {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.page-stat .statistiques .btn-consult {
+  padding: 5px 10px;
+  background-color: #04aa6d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-stat .statistiques .btn-consult:hover {
+  background-color: #028a5e;
+}

@@ -1,0 +1,10 @@
+DROP TABLE mettre_au_garage;
+DROP TABLE prise_en_charge;
+DROP TABLE utiliser;
+DROP TABLE pieces;
+DROP TABLE type_piece;
+DROP TABLE interventions;
+DROP TABLE garage;
+DROP TABLE vehicules;
+DROP TABLE clients;
+DROP TABLE type_vehicule;
